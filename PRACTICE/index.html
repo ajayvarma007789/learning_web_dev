@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows:100px 200px 200px ;
+            gap:30px;
+            margin: 0 auto ;
+        }
+        .box1{
+            display:grid;
+            grid-column: span 2;
+        }
+        #card{
+            display: grid;
+            grid-template-columns: minmax(100px,1fr) 2fr;
+            /* grid-template-rows: 150px; */
+
+            border: 1px black solid;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <span class="heading">WELCOME</span>
+        </div>
+        <div id="card" class="box2">
+            <div style="background-color: black; border-radius: 10px; margin: 10px;"></div>
+            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab quas ex, minus recusandae repellat nulla, et, architecto explicabo nam qui culpa necessitatibus blanditiis praesentium in ut repudiandae exercitationem quibusdam.</p></div>
+        </div>
+        <div id="card" class="box3">
+            <div style="background-color: black; border-radius: 10px; margin: 10px;"></div>
+            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab quas ex, minus recusandae repellat nulla, et, architecto explicabo nam qui culpa necessitatibus blanditiis praesentium in ut repudiandae exercitationem quibusdam.</p></div>
+        </div>
+        <div id="card" class="box4"> 
+            <div style="background-color: black; border-radius: 10px; margin: 10px;"></div>
+            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab quas ex, minus recusandae repellat nulla, et, architecto explicabo nam qui culpa necessitatibus blanditiis praesentium in ut repudiandae exercitationem quibusdam.</p></div>
+        </div>
+            <div id="card" class="box5"> <div style="background-color: black; border-radius: 10px; margin: 10px;"></div>
+            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab quas ex, minus recusandae repellat nulla, et, architecto explicabo nam qui culpa necessitatibus blanditiis praesentium in ut repudiandae exercitationem quibusdam.</p></div>
+        </div>
+
+    </div>
+    
+    
+</body>
+</html>
